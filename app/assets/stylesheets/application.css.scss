@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.fulllogo{
+	margin-top: 5px;
+	height: 250px;
+	width: 350px;
+}
+
+.sf-vertical li{
+	width: 100%;
+	padding-right: 20px;
+}
+
+.sf-menu {
+	float: left;
+	position: relative;
+}
+.sf-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	z-index: 10;
+}
+.page_item {
+	line-height: 18px;
+	display: list-item;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+
+#social fb {
+	background-image: url("facebooklogo.png");
+	display: block;
+	width: 29px;
+	height: 30px;
+	margin: 0 11px 10px;
+	background-size: contain;
+	-webkit-transition: opacity 0.5s;
+}
+
+#social insta {
+	background-image: url("instagram13.png");
+	background-size: contain;
+	display: block;
+	width: 29px;
+	height: 30px;
+	-webkit-transition: opacity 0.5s;
+}
