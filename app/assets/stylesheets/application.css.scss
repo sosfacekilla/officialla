@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.navcontainer {
+	width: 351px;
+	border-bottom: 1px solid black;
+}
 
 .fulllogo{
 	margin-top: 5px;
@@ -41,24 +45,57 @@
 	display: list-item;
 	text-align: center;
 	float: left;
-	position: relative;
+	
+	 
+	
 }
 
-#social fb {
+.navigation div{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.navleft {
+	background-color: purple !important;
+	overflow: auto;
+	height: 200px;
+	vertical-align: middle;
+}
+
+#socialfb {
 	background-image: url("facebooklogo.png");
-	display: block;
+	display: inline-block;
 	width: 29px;
 	height: 30px;
-	margin: 0 11px 10px;
 	background-size: contain;
 	-webkit-transition: opacity 0.5s;
 }
 
-#social insta {
+#socialinsta {
 	background-image: url("instagram13.png");
 	background-size: contain;
-	display: block;
+	display: inline-block;
 	width: 29px;
 	height: 30px;
 	-webkit-transition: opacity 0.5s;
 }
+
+#socialtwitt {
+	background-image: url("twitter4.png");
+	background-size: contain;
+	display: inline-block;
+	width: 29px;
+	height: 30px;
+	-webkit-transition: opacity 0.5s;
+}
+
+#socialsound {
+	background-image: url("itsmy3.png");
+	background-size: contain;
+	display: inline-block;
+	width: 29px;
+	height: 30px;
+	-webkit-transition: opacity 0.5s;
+}
+
+
