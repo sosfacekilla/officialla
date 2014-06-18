@@ -1,3 +1,53 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#restlistbox {
+	float: center;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	position: inline-block;
+	positon: fixed;
+	margin-right: 90px;
+	margin-top: 65px;
+	overflow: auto;
+	font-family: bondini;
+	background-color: red;
+	width: 500px;
+
+}
+
+#restlistbox h1 {
+	font-family: bondini;
+}
+
+.table {
+	float: center;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	position: inline-block;
+	margin-right: 90px;
+	margin-top: 65px;
+	overflow: auto;
+	font-family: bondini;
+	
+}
+
+.backing {
+	float: center;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	position: inline-block;
+	positon: fixed;
+	margin-right: 90px;
+	margin-top: 65px;
+	overflow: auto;
+	font-family: bondini;
+	background-color: red;
+	width: 500px;
+
+}

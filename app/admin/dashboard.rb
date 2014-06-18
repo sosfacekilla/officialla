@@ -10,13 +10,18 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
-    # Here is an example of a simple dashboard with columns and panels.
+    # link_to 'add New Event', new_event_path 
+
+    #   action_item :only => :show do
+    # link_to('View on site', post_path(post)) if post.published?
+    #  end
+    # # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
     #   column do
-    #     panel "Recent Posts" do
+    #     panel "Recent Events" do
     #       ul do
-    #         Post.recent(5).map do |post|
+    #         Event.recent(5).map do |post|
     #           li link_to(post.title, admin_post_path(post))
     #         end
     #       end

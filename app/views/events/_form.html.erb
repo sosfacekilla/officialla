@@ -1,0 +1,20 @@
+<div class='backing' class='backing2' class="rows">
+<%= form_for @event do |f| %>
+<tr>
+	<th>Name: <%= f.text_field :name, class: "form-color" %></th>
+	<br />
+	<th>Date: <%= f.text_field :date %></th>
+	<br />
+	<th>Time:<%= f.text_field :time %></th>
+	<br />
+	<th>Location:<%= f.text_field :location%></th>
+	<br />
+	<th>Type:<%= f.select :type, [['open'],['exclusive'],['ticketed']] %></th>
+	<th>Website:<%= f.text_field :website %></th>
+	<th>About:<%= f.text_field :about %></th>
+</tr>
+
+
+	<%= f.submit 'Add' %>
+<% end %>
+</div>

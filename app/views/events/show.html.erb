@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <div class="backing">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 profile">
+    <p id="notice"></p>
+
+    <p class="backing">
+      <strong>Name:</strong>
+      <%= @event.name %>
+    </p>
+
+    <p class="backing">
+      <strong>Date:</strong>
+      <%= @event.date %>
+    </p>
+
+    <p class="backing">
+      <strong>Time:</strong>
+      <%= @event.time %>
+    </p>
+
+    <p class="backing">
+      <strong>Location:</strong>
+      <%= @event.location %>
+    </p>
+
+    <p class="backing">
+      <strong>Type:</strong>
+      <%= @event.ttype%>
+    </p>
+
+    <p class="backing">
+      <strong>Website:</strong>
+      <%= @event.website %>
+    </p>
+
+    <p class="backing">
+    <%= link_to 'Edit', edit_event_path(@event) %> 
+    <%= link_to 'Back', events_path %>
+    </p>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

@@ -1,1 +1,31 @@
-<h1>hello</h1>
+<div class="backing">
+		<div id="container">
+
+<div id="restlist">
+	<div id="restlistbox">
+		<h1>Events</h1>
+			<table class="table table-hover" class="table">
+				<tr>
+					<th>NAME</th>
+					<th>DATE</th>
+					<th>TIME</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			<% @events.each do |e| %>
+				<tr>			
+					<td class="rows"><%= link_to e.name, e,'data-no-turbolink' => true %></td>
+					<td class="rows"><%= e.date %></td>
+					<td class="rows"><%= e.time%></td>
+					<td class="rows"><a href="<%= e.website %>">website</a></td>
+					<td class="rows"><%= button_to 'Update', edit_event_path(e.id), method: 'get' %></td>
+					<td class="rows"><%= button_to 'Delete', event_path(e.id), method: 'delete', :confirm => 'Are you sure?' %></td>
+				</tr>	
+			<%end %>
+			</table>
+			<%= link_to 'add New Event', new_event_path %>
+    </div>

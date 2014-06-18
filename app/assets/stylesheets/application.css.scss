@@ -14,14 +14,16 @@
  *= require_self
  */
 .navcontainer {
-	width: 351px;
+	width: 355px;
 	border-bottom: 1px solid black;
+	position: fixed;
 }
 
 .fulllogo{
 	margin-top: 5px;
 	height: 250px;
 	width: 350px;
+	border-bottom: 1px solid black;
 }
 
 .sf-vertical li{
@@ -37,7 +39,8 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-size: 20px;
+	font-size: 22px;
+	font-family: bondini;
 	z-index: 10;
 }
 .page_item {
@@ -45,21 +48,20 @@
 	display: list-item;
 	text-align: center;
 	float: left;
-	
-	 
-	
+	margin: 10px;
 }
 
 .navigation div{
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 13px;
 }
 
 .navleft {
-	background-color: purple !important;
+	border-bottom: 1px solid black;
 	overflow: auto;
 	height: 200px;
 	vertical-align: middle;
+	display: table-cell;
 }
 
 #socialfb {
@@ -97,5 +99,8 @@
 	height: 30px;
 	-webkit-transition: opacity 0.5s;
 }
+
+
+
 
 
