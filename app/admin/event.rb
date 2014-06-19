@@ -1,4 +1,4 @@
-# ActiveAdmin.register Post do
+ActiveAdmin.register Event do
 
 #   permit_params :name, :date, :time
   
@@ -15,4 +15,4 @@
   #  permitted
   # end
   
-# end
+end

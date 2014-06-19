@@ -4,5 +4,14 @@ class AdminUser < ActiveRecord::Base
   devise :database_authenticatable, 
          :recoverable, :rememberable, :trackable, :validatable
 
-         has_many :events
+    has_attached_file :avatar, :styles => { 
+  	:medium => "300x300>", :thumb => "50x50>" }
+
+         # has_many :events
+
+         
+
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+
 end
+
