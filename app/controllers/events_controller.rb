@@ -10,15 +10,17 @@ class EventsController < ApplicationController
 
 	def new
 		@event = Event.new
+		# @event.admin_user_id = Admin_user.first.id
 	end
 
 	def create
-		Event.create(params.require(:event).permit(:name,:date,:time,:location,:website,:about))
+		@event = Event.create(params.require(:event).permit(:name,:date,:time,:location,:website,:about))
 		redirect_to events_path
 	end
 
 	def edit
 		@event = Event.find(params[:id])
+
 	end
 
 	def update

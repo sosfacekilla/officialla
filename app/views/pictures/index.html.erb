@@ -1,1 +1,23 @@
-<h1>hey</h1>
+<table class="pictitle">
+
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>Caption</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  
+  <tbody>
+    <% @pictures.each do |p| %>
+      <tr>
+        <td><%= image_tag p.avatar(:medium) %></td>
+
+        <td><%= link_to 'Delete', method: :delete%></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>

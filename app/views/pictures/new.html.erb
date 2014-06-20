@@ -1,10 +1,18 @@
  <body>
 <fieldset>
-<legend>Add a picture</legend>
+<div class="picture">Add a picture</div>
 <%= form_for @picture, :html => { :multipart => true } do |f| %>
 
-  <%= f.file_field :image, class: 'form-control' %>
+<div class="field">  
+  <%= f.label :avatar, "Upload photo" %>
+  <br />
+  <%= f.file_field :avatar %>
+</div>
 
-<% end %> 
+<div class="actions">
+    <%= f.submit "Upload" %>
+</div>
+<% end %>
+
 </fieldset>
 </body>
