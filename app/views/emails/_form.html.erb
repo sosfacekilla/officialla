@@ -1,0 +1,15 @@
+
+
+<div class="email-form">
+
+	<%= form_for :email_form, url: emails_path, method: :post do |f| %>
+
+		<%= f.text_field :name, placeholder: 'Name', class: 'form-control' %>
+		<%= f.text_field :onlinemail, placeholder: 'Email address', class: 'form-control' %>
+		<%= f.text_field :title, placeholder: 'Title', class: 'form-control' %>
+		<%= f.text_field :message, placeholder: 'Message', class: 'form-control' %>
+		<%= f.submit "Get in contact with us", class: 'btn' %>
+
+	<% end %>
+
+</div>
