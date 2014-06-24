@@ -11,7 +11,6 @@ class PicturesController < ApplicationController
   		@picture = Picture.new(post_params)
   		if @picture.save
 	 		redirect_to pictures_path 
-		end
 		else
 	        render 'new' 
 	    end
@@ -29,17 +28,18 @@ class PicturesController < ApplicationController
 
 
 
-private
+	private
 
 # Use strong_parameters for attribute whitelisting
 # Be sure to update your create() and update() controller methods.
 
-def post_params
-  params.require(:picture).permit(:avatar)
-end
+	def post_params
+  		params.require(:picture).permit(:avatar)
+	end
 
-def set_post
-	@picture = Picture.find(params[:id])
+	def set_post
+		@picture = Picture.find(params[:id])
+	end
 end
 
 
