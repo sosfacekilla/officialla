@@ -14,7 +14,7 @@ class EmailsController < ApplicationController
 		@email = Email.new(params.require(:email).permit(:name, :onlinemail, :title, :message))
 		if @email.save
 			flash[:success] = "Message Was Sent Successfully"
-			redirect_to :back
+			redirect_to events_path
 		else
 			# flash[:error} = "there was a problem sending your message"
 				render 'form'
