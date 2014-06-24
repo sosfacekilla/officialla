@@ -2,7 +2,7 @@
 
 <div class="email-form">
 
-	<%= form_for :email_form, url: emails_path, method: :post do |f| %>
+	<%= form_for :email, url: emails_path do |f| %>
 
 		<%= f.text_field :name, placeholder: 'Name', class: 'form-control' %>
 		<%= f.text_field :onlinemail, placeholder: 'Email address', class: 'form-control' %>
