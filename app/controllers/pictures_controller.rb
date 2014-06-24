@@ -19,8 +19,7 @@ class PicturesController < ApplicationController
 
 	def destroy
 		Picture.find(params[:id]).destroy
-		@picture.destroy
-		redirect_to pictures_path
+	    redirect_to pictures_path
 	end
                                                                                                             
 
