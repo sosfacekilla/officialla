@@ -1,6 +1,13 @@
 require 'spec_helper'
 
 describe EventsController do 
+	let :valid_attributes do
+    {
+      :name => "yolo",
+      :location => "ga",
+      :date => "june"
+    }
+    end
 
 	describe "GET index" do
 		before do
@@ -22,4 +29,14 @@ describe EventsController do
 			expect(response).to render_template :new
 		end
 	end
+
+	describe "POST create" do
+    describe "successful create" do
+      it "should create a yogurt in the database" do
+        expect do
+          post :create, yogurt: valid_attributes
+        end
+      end
+     end
+     end
 end
