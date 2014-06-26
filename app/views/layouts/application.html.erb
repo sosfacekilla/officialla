@@ -41,7 +41,23 @@
 					</li>
 
 					<li class="page_item">
-						<a href="#"><%=link_to 'Contact Us', emails_path %></a>
+						<a href="#" data-reveal-id="myModal">Contact Us
+							<div id="myModal" class="reveal-modal" data-reveal>
+							
+							<%= form_for :email, url: emails_path do |f| %>
+
+								<%= f.text_field :name, placeholder: 'Name', class: 'form-control' %>
+								<%= f.text_field :onlinemail, placeholder: 'Email address', class: 'form-control' %>
+								<%= f.text_field :title, placeholder: 'Title', class: 'form-control' %>
+								<%= f.text_field :message, placeholder: 'Message', class: 'form-control' %>
+							<%= f.submit "Send", class: 'btn' %>
+							
+						
+							
+
+	<% end %>
+	<a class="close-reveal-modal">&#215;</a>
+	</div>
 					</li>
 				</ul>
 			</div>
