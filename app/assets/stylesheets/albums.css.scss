@@ -40,7 +40,12 @@ h1.albumhead {
 	float: right;
 	text-align: center;
 	margin: 0 auto;
-	position: inline-block;
+
+	position: inlime-block;
+	positon: fixed;
+	margin-right: 90px;
+	margin-top: 40px;
+	overflow: auto;
 }
 
 table.albumslider {
