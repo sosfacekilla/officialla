@@ -1,12 +1,18 @@
 <div class="albumshow">
+
+
 <p>
   <b>Name:</b>
-  <%=h @album.name %><br />
-  
-  <% @album.pictures.each do |photo| %>
-    
+  	<%=h @album.name %><br /></p>
+<ul class="example-orbit-content" data-orbit>
+  	<% @album.pictures.each do |picture| %>
+  <li data-orbit-slide="headline-1">
+  	<div>
+  		<%= image_tag picture.avatar.url(:medium) %>
+    </div>
+  </li>
   <% end %>
-</p>
+</ul>
 
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
