@@ -14,7 +14,7 @@
   <tr>
     <td><%= link_to album.name, album_path(album) %></td>
   <% album.pictures.each do |p| %>
-  <td><%= image_tag p.avatar.url(:medium) %></td>
+  <td><%= image_tag p.avatar.url(:original) %></td>
 
   <% end %>
     

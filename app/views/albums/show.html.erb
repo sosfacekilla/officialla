@@ -8,7 +8,7 @@
   	<% @album.pictures.each do |picture| %>
   <li data-orbit-slide="headline-1">
   	<div>
-  		<%= image_tag picture.avatar.url(:medium) %>
+  		<%= image_tag picture.avatar.url(:original) %>
     </div>
   </li>
   <% end %>
