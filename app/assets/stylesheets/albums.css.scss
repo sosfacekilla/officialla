@@ -1,3 +1,32 @@
 // Place all the styles related to the albums controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.album {
+	    font-size: 15;
+	float: right;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	position: inline-block;
+	margin-right: 90px;
+	margin-top: 40px;
+	overflow: auto;
+	font-family: bondini;
+	background-color: red;
+}
+
+.albumshow {
+    font-size: 15;
+	float: right;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	position: inline-block;
+	margin-right: 90px;
+	margin-top: 40px;
+	overflow: auto;
+	font-family: bondini;
+	background-color: red;
+	
+}

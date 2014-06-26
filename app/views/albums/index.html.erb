@@ -1,3 +1,4 @@
+<div class="album">
 <h1>Listing albums</h1>
 
 <table>
@@ -10,9 +11,9 @@
 <% @albums.each do |album| %>
   <tr>
     <td><%=h album.name %></td>
-  <% album.pictures.each do |photo| %>
-    <td><%=h picture.title %></td>
-    <td><%= image_tag picture.upload.url(:thumb) %></td>
+  <% album.pictures.each do |p| %>
+  <td><%= image_tag p.avatar.url(:medium) %></td>
+
   <% end %>
     <td><%= link_to 'Show', album %></td>
     <td><%= link_to 'Edit', edit_album_path(album) %></td>
@@ -20,6 +21,7 @@
   </tr>
 <% end %>
 </table>
+</div>
 
 <br />
 

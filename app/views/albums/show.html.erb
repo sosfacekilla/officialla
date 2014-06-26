@@ -1,13 +1,14 @@
+<div class="albumshow">
 <p>
   <b>Name:</b>
   <%=h @album.name %><br />
   
-  <% @album.photos.each do |photo| %>
-    <h3><%=h photo.title %></h3>
-    <%= image_tag photo.upload.url(:small) %>
+  <% @album.pictures.each do |photo| %>
+    
   <% end %>
 </p>
 
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
+</div>
