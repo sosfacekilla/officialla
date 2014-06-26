@@ -2,23 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.album {
-	    font-size: 15;
-	float: right;
-	text-align: center;
-	margin: 0 auto;
-	margin-bottom: 300px;
-	position: inline-block;
-	margin-right: 90px;
-	margin-top: 40px;
-	overflow: auto;
-	font-family: bondini;
-	background-color: orange;
-	opacity: .9;
-	width: 500px;
-	z-index: 1;
 
-}
 
 .albumshow {
     font-size: 15;
@@ -60,10 +44,13 @@ h1.albumhead {
 }
 
 table.albumslider {
-    margin-top: 50px;
+	float: right;
+    margin-top: 55px;
     background-color: orange;
 	opacity: .9;
 	width: 500px;
-	height: 300px;
+	height: 400px;
+	margin-right: 100px;
+	position: block;
 	
 }
