@@ -14,11 +14,12 @@
     <% @pictures.each do |p| %>
       <tr>
         <td><%= image_tag p.avatar.url(:medium) %></td>
-        
+
 
         <td><%= link_to 'Delete',p, method: :delete%></td>
       </tr>
     <% end %>
   </tbody>
+  
 
 </table>

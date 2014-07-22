@@ -4,88 +4,98 @@
   <title>laguestlist</title>
   <%= stylesheet_link_tag    'application', media: "all" %>
   <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'vendor/modernizr' %>
+    <%= javascript_include_tag 'vendor/modernizr' %>
+  
   <%= csrf_meta_tags %>
+
+
+
 
 
 </head>
 <body>
-	
+
 	<title>laguestlist</title>
-	<div class="navcontainer" id="navscroll">
-		<div class="logo">
-			<h1><%= image_tag 'laguestlist_logo.PNG', class: 'fulllogo' %> 
-			</h1>
-		</div>
-
-		<div class="navigation">
-			<div class="navleft">
-				<ul class="sf-menu sf-vertical sf-js-enabled sf-shadow">
-					
-
-					<li class="page_item">
-						<%= link_to 'Calendar', events_path %>
-					</li>
-
-					<li class="page_item">
-						<%= link_to 'Photography', albums_path %>
-					</li>
-
-					
-
-					<li class="page_item">
-						<a href="https://soundcloud.com/laguestlist">Melody</a>
-					</li>
-
-					<li class="page_item">
-						<a href="#" data-reveal-id="myModal">Contact Us
-							<div id="myModal" class="reveal-modal" data-reveal>
-							
-							<%= form_for :email, url: emails_path do |f| %>
-
-								<%= f.text_field :name, placeholder: 'Name', class: 'form-control' %>
-								<%= f.text_field :onlinemail, placeholder: 'Email address', class: 'form-control' %>
-								<%= f.text_field :title, placeholder: 'Title', class: 'form-control' %>
-								<%= f.text_field :message, placeholder: 'Message', class: 'form-control' %>
-							<%= f.submit "Send", class: 'btn' %>
-							
-						
-							
-
-	<% end %>
-	<a class="close-reveal-modal">&#215;</a>
-	</div>
-					</li>
-				</ul>
-			</div>
-		<div class="socialnav">
-
-				<a href="https://www.facebook.com/laguestlist">
-					<div id="socialfb"></div>
-				</a>
-				<a href="http://instagram.com/la.guestlist">
-					<div id="socialinsta"></div>
-				</a>
-				<a href="https://twitter.com/laguestlisst">
-					<div id="socialtwitt"></div>
-				</a>
-				<a href="https://soundcloud.com/laguestlist">
-					<div id="socialsound"></div>
-				</a>
-
-		</div>
 
 
-		</div> 
-
-		<!-- SnapWidget -->
-<iframe src="http://snapwidget.com/in/?u=bGEuZ3Vlc3RsaXN0fGlufDEyNXwzfDN8fG5vfDV8ZmFkZU91dHxvblN0YXJ0fHllcw==&v=9714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:390px"></iframe>
-	</div>
+		<div id="logo">
+			<h1 class="header">LAGUESTLIST</h1>
+    </div>
 	
+
+
+
+
+
+
+
+
+
+
+	<div class="contain-to-grid sticky">
+  <nav class="top-bar" data-topbar data-options="sticky_on: large">
+<nav  id="menu" class="nav">  
+    <ul>
+        <li>
+            <a  href="http://localhost:3000" title="">
+                <span  class="icon"> <i aria-hidden="true"  class="icon-home"></i></span><span>Home</span>
+            </a>
+        </li>
+        <li>      
+            <a href="#" title=""><span class="icon"> <i aria-hidden="true" class="icon-services"></i></span><span>This Week</span></a>   
+        </li> 
+        <li>
+            <a  href="http://localhost:3000/albums" title=""><span  class="icon"><i  aria-hidden="true" class="icon-portfolio"></i></span><span>Events</span></a>
+        </li>
+        <li>
+            <a  href="http://localhost:3000/events" title=""><span  class="icon"><i  aria-hidden="true" class="icon-blog"></i></span><span>Calendar</span></a> 
+        </li>
+        <li>
+            <a  href="http://localhost:3000/emails" title=""><span  class="icon"><i  aria-hidden="true" class="icon-contact"></i></span><span>Contact Us</span></a>
+        </li>
+ 
+    </ul>
+
+
+
+
+  </nav>
+
+                <div class="socialnav">
+
+        <a href="https://www.facebook.com/laguestlist">
+          <div id="socialfb"></div>
+        </a>
+        <a href="http://instagram.com/la.guestlist">
+          <div id="socialinsta"></div>
+        </a>
+        <a href="https://twitter.com/laguestlisst">
+          <div id="socialtwitt"></div>
+        </a>
+        <a href="https://soundcloud.com/laguestlist">
+          <div id="socialsound"></div>
+        </a>
+      </div>
+</div>
+
+<!-- <div class="instarender">
+
+
+    <iframe src="http://snapwidget.com/in/?u=bGEuZ3Vlc3RsaXN0fGlufDEyNXwzfDN8fG5vfDV8ZmFkZU91dHxvblN0YXJ0fHllcw==&v=9714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:390px"></iframe>
+</div> -->
+
+
+
+
+
+
+
+
 
 <%= yield %>
 
-<div class="bodyback"></div>
+
+
 
 
 

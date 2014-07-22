@@ -6,20 +6,33 @@
 	float: center;
 	text-align: center;
 	margin: 0 auto;
-	margin-bottom: 300px;
+	margin-bottom: 55px;
 	position: inline-block;
 	positon: fixed;
 	margin-right: 90px;
-
-	overflow: auto;
 	font-family: bondini;
-
-	width: 500px;
+	width: 700px;
 	z-index: 1;
-	background-color: orange;
-	opacity: .9;
-	padding-top: 200px;
+	margin-top: 100px;
+}
 
+div.email-form {
+	margin-top: 100px;
+	background-color: white;
+}
+
+input#email_message.form-control {
+	height: 100px;
+}
+
+input.btn {
+	background-color: #21B3ED;
+	float: center;
+}
+
+div.footer {
+	height: 100px;
+	background-color: black;
 }
 
 
