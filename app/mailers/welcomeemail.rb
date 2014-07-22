@@ -10,4 +10,4 @@ class WelcomeMail < ActionMailer::Base
 
 
 
-en
+end
