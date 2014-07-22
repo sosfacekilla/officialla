@@ -37,21 +37,24 @@
 <nav  id="menu" class="nav">  
     <ul>
         <li>
-            <a  href="http://laguestlist.herokuapp.com/" title="">
-                <span  class="icon"> <i aria-hidden="true"  class="icon-home"></i></span><span>Home</span>
-            </a>
+            
+               <span><%= link_to "Home", ''%></span>
+            
         </li>
         <li>      
-            <a href="http://laguestlist.herokuapp.com/weeks" title=""><span class="icon"> <i aria-hidden="true" class="icon-services"></i></span><span>This Week</span></a>   
+               <span><%= link_to "This Week", 'weeks'%></span>   
         </li> 
+
         <li>
-            <a  href="http://laguestlist.herokuapp.com/albums" title=""><span  class="icon"><i  aria-hidden="true" class="icon-portfolio"></i></span><span>Events</span></a>
+               <span><%= link_to "Albums", 'albums'%></span>
         </li>
+
         <li>
-            <a  href="http://laguestlist.herokuapp.com/events" title=""><span  class="icon"><i  aria-hidden="true" class="icon-blog"></i></span><span>Calendar</span></a> 
+            <span><%= link_to "Calendar", 'events'%></span>
         </li>
+
         <li>
-            <a  href="http://laguestlist.herokuapp.com/emails" title=""><span  class="icon"><i  aria-hidden="true" class="icon-contact"></i></span><span>Contact Us</span></a>
+            <span><%= link_to "Contact Us", 'emails'%></span>
         </li>
  
     </ul>
