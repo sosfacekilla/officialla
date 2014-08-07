@@ -19,7 +19,7 @@
 			<% @events.each do |e| %>
 				<tr>			
 					<td class="rows"><%= link_to e.name, e,'data-no-turbolink' => true %></td>
-					<td class="rows"><%= e.date %></td>
+					<td class="rows"><%= e.date.to_formatted_s(:long_ordinal) %></td>
 					<td class="rows"><a href="<%= e.location %>">location</a></td>
 					<td class="rows"><a href="<%= e.website %>">website</a></td>
 					

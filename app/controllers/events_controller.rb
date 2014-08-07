@@ -2,10 +2,15 @@ class EventsController < ApplicationController
 
 	def index
 		@events = Event.order(:date => :asc, :time => :asc)
+		
+	
+		
+
 	end
 
 	def show
 		@event = Event.find(params[:id])
+
 	end
 
 	def new
