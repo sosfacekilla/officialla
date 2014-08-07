@@ -1,3 +1,5 @@
+require 'chronic'
+
 class Event < ActiveRecord::Base
 
 	

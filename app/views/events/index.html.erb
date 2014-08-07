@@ -1,13 +1,16 @@
+
+
 <div class="backing">
 		<div id="container">
 
 <div id="restlist">
 	<div id="restlistbox">
 		<h1>Calendar</h1>
+
 			<table class="table table-hover" class="table">
 				<tr>
-					<th>NAME</th>
 					<th>DATE</th>
+					<th>NAME</th>
 					<th>TIME</th>
 					<th></th>
 					<th></th>
@@ -16,10 +19,24 @@
 					<th></th>
 					<th></th>
 				</tr>
+
+				<%= Chronic.parse('tomorrow') %>
+
+
+
+	
 			<% @events.each do |e| %>
+			
+
+
+
+
+
+
+
 				<tr>			
-					<td class="rows"><%= link_to e.name, e,'data-no-turbolink' => true %></td>
 					<td class="rows"><%= e.date.to_formatted_s(:long_ordinal) %></td>
+					<td class="rows"><%= link_to e.name, e,'data-no-turbolink' => true %></td>
 					<td class="rows"><a href="<%= e.location %>">location</a></td>
 					<td class="rows"><a href="<%= e.website %>">website</a></td>
 					

@@ -17,7 +17,13 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'chronic'
+
+
+
 gem 'groupdate'
+
+
 
 
 gem 'devise'

@@ -2,11 +2,11 @@ class EventsController < ApplicationController
 
 	def index
 		@events = Event.order(:date => :asc, :time => :asc)
-		
-	
-		
-
+		all_dates = Event.order("date DESC").map(&:date)
+		@date = Event.all.group_by(&:date)
 	end
+
+	
 
 	def show
 		@event = Event.find(params[:id])
