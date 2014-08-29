@@ -13,6 +13,7 @@ class EmailsController < ApplicationController
 		
 		@email = Email.new(params.require(:email).permit(:name, :onlinemail, :title, :message))
 		if @email.save
+			EmailMailer.welcome_email(@email).deliver
 			flash[:success] = "Message Was Sent Successfully"
 			redirect_to events_path
 		else

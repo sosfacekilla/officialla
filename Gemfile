@@ -19,6 +19,8 @@ gem 'jquery-rails'
 
 gem 'chronic'
 
+gem "figaro"
+
 
 
 gem 'groupdate'
