@@ -30,7 +30,8 @@ module Officialla
     # config.i18n.default_locale = :de
 
      config.assets.enabled = true  
- config.assets.paths << "#{Rails.root}/app/assets/fonts" 
+
+ config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
 
     config.assets.precompile += %w( vendor/modernizr )
