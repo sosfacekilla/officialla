@@ -12,16 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require fonts
  */
 
- @font-face {
-    font-family: 'archer';
-    src: url('/assets/archer.eot');
-    src: url('/assets/archer.eot?iefix') format('eot'),
-         url('/assets/archer.woff') format('woff'),
-         url('/assets/archer.ttf') format('truetype'),
-         url('/assets/archer.svg#webfont') format('svg');
-}
 
 
 
