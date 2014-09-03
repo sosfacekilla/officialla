@@ -59,7 +59,14 @@ Rails.application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif *.ttf]
+  config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
+
+  # Adding Webfonts to the Asset Pipeline
+config.assets.precompile << Proc.new { |path|
+  if path =~ /\.(eot|svg|ttf|woff)\z/
+    true
+  end
+}
   
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
